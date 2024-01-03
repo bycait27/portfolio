@@ -4,8 +4,11 @@ import {
     Toolbar,
     AppBar,
     Avatar,
-    Box
+    Box,
+    Button
 } from "@mui/material";
+
+import { Link } from 'react-router-dom';
 
 import NavBar from "./NavBar";
 
@@ -36,9 +39,14 @@ function Header() {
         <ThemeProvider theme={theme}>
             <AppBar position='fixed'>
                     <Toolbar>
-                        <Avatar variant='rounded' className='avatar'>
-                            CA
-                        </Avatar>
+                        <Button
+                        component={Link}
+                        to='/'
+                        >
+                            <Avatar variant='rounded' className='avatar'>
+                                CA
+                            </Avatar>
+                        </Button>
                         <NavBar />
                     </Toolbar>
             </AppBar>
