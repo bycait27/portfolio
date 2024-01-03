@@ -16,6 +16,17 @@ const theme = createTheme({
     //     },
     // },
     components: {
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    fontWeight: 'bolder',
+                    my: 2,
+                    display: 'flex',
+                    fontSize: 'medium',
+                    "&:hover": { color: 'grey' }
+                }
+            }
+        },
     }
 });
 
@@ -25,7 +36,12 @@ function NavBar() {
     const currentPage = useLocation().pathname;
     return (
         <ThemeProvider theme={theme}>
-            <Box className='nav-container'>
+            <Box sx={{ 
+                flexGrow: 1, 
+                display: 'flex', 
+                flexDirection: 'row', 
+                justifyContent: 'right' 
+                }}>
                 {pages.map((page) => (
                     <Button
                     key={page}
@@ -45,10 +61,11 @@ function NavBar() {
                 variant='contained'
                 sx={{
                     '&:hover': { bgcolor: '#b9b3af' },
-                    color: '#f5efe8',
+                    color: '#f5f5f5',
+                    bgcolor: '#222',
                     borderRadius: 5,
                     marginLeft: 2,
-                    color: currentPage === '/contact' ? '#b9b3af' : '#222'
+                    color: currentPage === '/contact' ? '#b9b3af' : '#f5f5f5'
                 }}
                 >
                     contact me

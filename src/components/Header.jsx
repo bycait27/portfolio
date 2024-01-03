@@ -1,6 +1,8 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import {
     Typography,
+    Toolbar,
+    AppBar,
     Avatar,
     Box
 } from "@mui/material";
@@ -8,20 +10,17 @@ import {
 import NavBar from "./NavBar";
 
 const theme = createTheme({
-    // palette: {
-    //     primary: {
-    //         main: "#fff",
-    //     },
-    //     secondary: {
-    //         main: "#000",
-    //     },
-    // },
+    palette: {
+        primary: {
+            main: "#f5f5f5",
+        },
+    },
     components: {
         MuiAvatar: {
             styleOverrides: {
                 root: {
                     backgroundColor: '#222',
-                    color: '#f5efe8',
+                    color: '#f5f5f5',
                     fontWeight: 'bolder',
                     height: 50,
                     width: 50,
@@ -35,12 +34,14 @@ const theme = createTheme({
 function Header() {
     return (
         <ThemeProvider theme={theme}>
-            <Box className='header-container'>
-                <Avatar variant='rounded' className='avatar'>
-                    CA
-                </Avatar>
-                <NavBar />
-            </Box>
+            <AppBar position='fixed'>
+                    <Toolbar>
+                        <Avatar variant='rounded' className='avatar'>
+                            CA
+                        </Avatar>
+                        <NavBar />
+                    </Toolbar>
+            </AppBar>
         </ThemeProvider>
     );
 };

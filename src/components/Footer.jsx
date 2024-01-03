@@ -39,7 +39,7 @@ function Footer() {
                     <LinkedInIcon sx={{ fontSize: 40 }} />
                 </a>
                 </Stack>
-                <Typography variant='body2' className='footer-text'>
+                <Typography className='footer-text'>
                     © 2023 Caitlin Ash
                 </Typography>
             </Box>

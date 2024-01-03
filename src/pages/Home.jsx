@@ -8,24 +8,24 @@ import {
     Box
 } from "@mui/material";
 
-// const theme = createTheme({
-//     // palette: {
-//     //     primary: {
-//     //         main: "#fff",
-//     //     },
-//     //     secondary: {
-//     //         main: "#000",
-//     //     },
-//     // },
-//     components: {
-//     }
-// });
+const theme = createTheme({
+    // palette: {
+    //     primary: {
+    //         main: "#fff",
+    //     },
+    //     secondary: {
+    //         main: "#000",
+    //     },
+    // },
+    components: {
+    }
+});
 
 function Home() {
     return (
-        // <ThemeProvider theme={theme}>
-            <Box>
-                <Box>
+        <ThemeProvider theme={theme}>
+            <Box className='big-big-container'>
+                <Box className='big-container'>
                 <TypeAnimation className='hello-2'
                         sequence={[
                             'HI, I\'M CAITLIN,\nA FULL-STACK\nWEB DEVELOPER',
@@ -52,7 +52,7 @@ function Home() {
                     <img className='image' src={image} />
                 </Box>
             </Box>
-        // </ThemeProvider>
+        </ThemeProvider>
     );
 };
 
