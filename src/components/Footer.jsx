@@ -2,11 +2,24 @@ import {
     Stack,
     Typography,
     Box
-} from '@mui/material';
+} from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
+const theme = createTheme({
+    // palette: {
+    //     primary: {
+    //         main: "#fff",
+    //     },
+    //     secondary: {
+    //         main: "#000",
+    //     },
+    // },
+    components: {
+    }
+});
 
 function Footer() {
     return (
