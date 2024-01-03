@@ -5,6 +5,8 @@ import {
     Box
 } from "@mui/material";
 
+import NavBar from "./NavBar";
+
 const theme = createTheme({
     // palette: {
     //     primary: {
@@ -37,6 +39,7 @@ function Header() {
                 <Avatar variant='rounded' className='avatar'>
                     CA
                 </Avatar>
+                <NavBar />
             </Box>
         </ThemeProvider>
     );
