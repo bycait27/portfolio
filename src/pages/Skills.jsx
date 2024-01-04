@@ -36,6 +36,9 @@ import {
 
 import { TbBrandVscode } from "react-icons/tb";
 
+import { gsap } from "gsap";
+import { useEffect, useRef } from "react";
+
 const theme = createTheme({
     palette: {
         primary: {
@@ -72,13 +75,42 @@ const theme = createTheme({
 });
 
 function Skills() {
+    const frontEnd = useRef(null);
+    const backEnd = useRef(null);
+    const devOps = useRef(null);
+
+    useEffect(() => {
+        const tl = gsap.timeline();
+
+        tl.from(frontEnd.current, {
+            duration: 1,
+            opacity: 0,
+            y: 100,
+            ease: "power4.out",
+        
+        })
+
+        .from(backEnd.current, {
+            duration: 1,
+            opacity: 0,
+            y: 100,
+            ease: "power4.out",
+        })
+            .from(devOps.current, {
+                duration: 1,
+                opacity: 0,
+                y: 100,
+                ease: "power4.out",
+        })
+    });
+
     return (
         <ThemeProvider theme={theme}>
             <Box className='skills-container'>
                 <p className='tech'>
                     Technologies I have worked with:
                 </p>
-                <Box>
+                <Box ref={frontEnd}>
                     <Typography>
                         FRONTEND
                     </Typography>
@@ -98,7 +130,7 @@ function Skills() {
                         </Stack>
                     </Box>   
                 </Box>
-                <Box>
+                <Box ref={backEnd}>
                     <Typography>
                         BACKEND
                     </Typography>
@@ -113,7 +145,7 @@ function Skills() {
                         </Stack>
                     </Box>   
                 </Box>
-                <Box>
+                <Box ref={devOps}>
                     <Typography>
                         DEVOPS
                     </Typography>
