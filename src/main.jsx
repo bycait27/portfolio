@@ -9,6 +9,7 @@ import About from "./pages/About.jsx";
 import Projects from "./pages/Projects.jsx";
 import Skills from "./pages/Skills.jsx";
 import Resume from "./pages/Resume.jsx";
+import Contact from "./pages/Contact.jsx";
 
 const router = createBrowserRouter([
     {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
             {
                 path: '/resume',
                 element: <Resume />,
+            },
+            {
+                path: '/contact',
+                element: <Contact />,
             },
         ],
     },
