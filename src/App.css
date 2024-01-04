@@ -144,3 +144,16 @@ a:hover {
     align-items: end; */
     margin: 20px;
 }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+}
