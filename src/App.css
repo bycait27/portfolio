@@ -113,3 +113,17 @@ a:hover {
     margin: 20px;
     padding: 20px;
 }
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.tech {
+    font-weight: 900;
+    font-size: x-large;
+}

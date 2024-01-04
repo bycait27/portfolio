@@ -7,6 +7,8 @@ import App from "./App.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 
+import Skills from "./pages/Skills.jsx";
+
 const router = createBrowserRouter([
     {
         path: '/',
@@ -20,6 +22,10 @@ const router = createBrowserRouter([
                 path: '/about',
                 element: <About />,
             },
+            {
+                path: '/skills',
+                element: <Skills />,
+            }
         ],
     },
 ]);

@@ -27,7 +27,8 @@ const theme = createTheme({
                     fontWeight: 'bolder',
                     height: 50,
                     width: 50,
-                    margin: 2
+                    margin: 2,
+                    '&:hover': { backgroundColor: '#b9b3af' }
                 }
             }
         }
