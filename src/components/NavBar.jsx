@@ -60,7 +60,7 @@ function NavBar() {
                 to='/contact'
                 variant='contained'
                 sx={{
-                    '&:hover': { bgcolor: '#b9b3af' },
+                    '&:hover': { bgcolor: '#b9b3af', color: '#222' },
                     color: '#f5f5f5',
                     bgcolor: '#222',
                     borderRadius: 5,

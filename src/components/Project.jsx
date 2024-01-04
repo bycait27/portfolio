@@ -23,7 +23,7 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     color: '#222',
-                    "&:hover": { color: 'grey' },
+                    "&:hover": { color: '#f5fef8' },
                     padding: 1,
                 }
             }
@@ -60,11 +60,14 @@ function Project({ imageUrl, projectTitle, projectDescription, viewCode, viewApp
                     <CardContent>
                         <Typography sx={{ 
                             fontSize: 'large', 
-                            fontWeight: 800 
+                            fontWeight: 800,
+                            textAlign: 'center' 
                             }}>
                             {projectTitle}
                         </Typography>
-                        <Typography>
+                        <Typography sx={{
+                            textAlign: 'center'
+                        }}>
                             {projectDescription}
                         </Typography>
                     </CardContent>

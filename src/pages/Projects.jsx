@@ -81,7 +81,7 @@ function Projects() {
             <Box ref={projects} className='projects'>
                 {projectData.map(( project, index) => (
                     <Project key={index} {...project} />
-                ))};
+                ))}
             </Box>
         </Box>
     );
