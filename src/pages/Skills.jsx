@@ -3,6 +3,8 @@ import {
     Typography,
     Box,
     Stack,
+    Tooltip,
+    Button
 } from "@mui/material";
 import {
     FaReact ,
@@ -71,6 +73,14 @@ const theme = createTheme({
                 },
             },
         },
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    color: '#222',
+                    fontSize: 35
+                }
+            }
+        }
     }
 });
 
@@ -116,17 +126,61 @@ function Skills() {
                     </Typography>
                     <Box>
                         <Stack sx={{ fontSize: 35 }} direction="row" spacing={1}>
-                            <FaReact />
-                            <FaCss3Alt />
-                            <FaHtml5 />
-                            <FaVuejs />
-                            <FaAngular />
-                            <FaBootstrap />
-                            <SiHandlebarsdotjs />
-                            <SiTailwindcss />
-                            <SiJquery />
-                            <SiJavascript />
-                            <SiTypescript />
+                            <Tooltip title='React.js' placement='top'>
+                                <Button>
+                                    <FaReact/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='CSS' placement='top'>
+                                <Button>
+                                    <FaCss3Alt/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='HTML5' placement='top'>
+                                <Button>
+                                    <FaHtml5/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='Vue.js' placement='top'>
+                                <Button>
+                                    <FaVuejs/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='Angular.js' placement='top'>
+                                <Button>
+                                    <FaAngular/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='Bootstrap' placement='top'>
+                                <Button>
+                                    <FaBootstrap/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='Handlebars.js' placement='top'>
+                                <Button>
+                                    <SiHandlebarsdotjs/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='Tailwind CSS' placement='top'>
+                                <Button>
+                                    <SiTailwindcss/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='jQuery' placement='top'>
+                                <Button>
+                                    <SiJquery/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='JavaScript' placement='top'>
+                                <Button>
+                                    <SiJavascript/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='TypeScript' placement='top'>
+                                <Button>
+                                    <SiTypescript/>
+                                </Button>
+                            </Tooltip>
                         </Stack>
                     </Box>   
                 </Box>
@@ -136,12 +190,36 @@ function Skills() {
                     </Typography>
                     <Box>
                         <Stack sx={{ fontSize: 40 }} direction="row" spacing={1}>
-                            <FaNode />
-                            <SiMongodb />
-                            <SiMysql />
-                            <SiSequelize />
-                            <SiGraphql />
-                            <SiApollographql />
+                            <Tooltip title='Node.js' placement='top'>
+                                <Button>
+                                    <FaNode/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='MongoDB' placement='top'>
+                                <Button>
+                                    <SiMongodb/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='MySQL' placement='top'>
+                                <Button>
+                                    <SiMysql/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='Sequelize' placement='top'>
+                                <Button>
+                                    <SiSequelize/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='GraphQL' placement='top'>
+                                <Button>
+                                    <SiGraphql/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='Apollo' placement='top'>
+                                <Button>
+                                    <SiApollographql/>
+                                </Button>
+                            </Tooltip>
                         </Stack>
                     </Box>   
                 </Box>
@@ -151,14 +229,46 @@ function Skills() {
                     </Typography>
                     <Box>
                         <Stack sx={{ fontSize: 34 }} direction="row" spacing={1}>
-                            <SiInsomnia />
-                            <SiJest />
-                            <SiHeroku />
-                            <SiWebpack />
-                            <FaGitAlt />
-                            <FaGithub />
-                            <FaNpm />
-                            <TbBrandVscode />
+                            <Tooltip title='Insomnia' placement='top'>
+                                <Button>
+                                    <SiInsomnia/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='Jest' placement='top'>
+                                <Button>
+                                    <SiJest/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='Heroku' placement='top'>
+                                <Button>
+                                    <SiHeroku/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='Webpack' placement='top'>
+                                <Button>
+                                    <SiWebpack/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='Git' placement='top'>
+                                <Button>
+                                    <FaGitAlt/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='GitHub' placement='top'>
+                                <Button>
+                                    <FaGithub/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='npm' placement='top'>
+                                <Button>
+                                    <FaNpm/>
+                                </Button>
+                            </Tooltip>
+                            <Tooltip title='VSCode' placement='top'>
+                                <Button>
+                                    <TbBrandVscode/>
+                                </Button>
+                            </Tooltip>
                         </Stack>
                     </Box>   
                 </Box>
