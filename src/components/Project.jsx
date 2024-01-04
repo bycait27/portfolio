@@ -54,9 +54,7 @@ function Project({ imageUrl, projectTitle, projectDescription, viewCode, viewApp
     return (
         <ThemeProvider theme={theme}>
             <Box className='project-card'>
-                <Card sx={{
-                    boxShadow: "1px 5px 30px 10px rgba(0,0,0,1)"
-                }}>
+                <Card>
                     <CardMedia image={imageUrl}>
                     </CardMedia>
                     <CardContent>
