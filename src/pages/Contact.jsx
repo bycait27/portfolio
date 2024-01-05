@@ -38,9 +38,7 @@ const theme = createTheme({
                 root: {
                     backgroundColor: '#b9b3af',
                     borderRadius: 5,
-                    margin: 4,
-                    boxShadow: "1px 5px 30px 10px rgba(0,0,0,1)"
-                }
+                    margin: 4,                }
             }
         },
         MuiTypography: {
