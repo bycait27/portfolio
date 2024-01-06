@@ -157,7 +157,8 @@ function Skills() {
                             <Box>
                                 <Box className='row' direction="row" spacing={1}>
                                     {category.icons.map((Icon, iconIndex) => (
-                                        <Tooltip key={iconIndex} title={Icon.displayName || ''} placement='top'>
+                                        // fix tooltip to display name of technology
+                                        <Tooltip key={iconIndex} title={Icon.name || ''} placement='top'>
                                             <Button>
                                                 {Icon}
                                             </Button>

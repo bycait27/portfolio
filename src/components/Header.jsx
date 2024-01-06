@@ -1,10 +1,8 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import {
-    Typography,
     Toolbar,
     AppBar,
     Avatar,
-    Box,
     Button
 } from "@mui/material";
 

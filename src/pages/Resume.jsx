@@ -25,18 +25,6 @@ const theme = createTheme({
                     backgroundColor: '#222'
                 }
             }
-        },
-        MuiTypography: {
-            styleOverrides: {
-                root: {
-                    paddingTop: 30,
-                    color: "#222",
-                    fontSize: 'x-large',
-                    textAlign: 'center',
-                    fontWeight: 'bolder',
-                    margin: 15
-                }
-            }
         }
     }
   });
@@ -53,14 +41,14 @@ function Resume() {
 
     return (
         <ThemeProvider theme={theme}>
-             <Box sx={{ margin: 12, marginBottom: 21 }} className='button-container'>
+             <Box className='button-container'>
                 <input
                     type="text"
                     value={pdfUrl}
                     onChange={(e) => setPdfUrl(e.target.value)}
                     placeholder="Enter PDF URL"
                 />
-                <Box style={{ height: '500px', width: '100%' }}>
+                <Box className='worker'>
                     <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`}>
                     <Viewer fileUrl={pdfUrl} />
                     </Worker>
