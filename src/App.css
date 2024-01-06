@@ -7,6 +7,10 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+.hello-2 {
+    font-size: 5em;;
+}
+
 .header-container {
     display: flex;
     flex-direction: row;
@@ -161,9 +165,14 @@ a:hover {
 /* media queries */
 
 @media (max-width: 1375px) {
+
+    .hello-2 {
+        font-size: 3em;
+    }
+
     .image {
-        width: 800px;
-        height: 420px;
+        width: 600px;
+        height: 400px;
     }
 
     .about-image {
@@ -194,9 +203,14 @@ a:hover {
 }
 
 @media (max-width: 768px) {
+
+    .hello-2 {
+        font-size: 2em;
+    }
+
     .image {
-        width: 600px;
-        height: 320px;
+        width: 500px;
+        height: 280px;
     }
 
     .about-image {
@@ -227,6 +241,11 @@ a:hover {
 }
 
 @media (max-width: 500px) {
+
+    .hello-2 {
+        font-size: 2em;
+    }
+
     .big-big-container {
         margin-top: 100px;
     }

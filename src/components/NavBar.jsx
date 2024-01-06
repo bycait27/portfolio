@@ -22,7 +22,7 @@ const theme = createTheme({
                     fontWeight: 'bolder',
                     my: 2,
                     display: 'flex',
-                    fontSize: 'medium',
+                    // fontSize: 'medium',
                     "&:hover": { color: 'grey' }
                 }
             }
@@ -48,7 +48,8 @@ function NavBar() {
                     component={Link}
                     to={`/${page}`}
                     sx={{
-                        color: currentPage === `/${page}` ? '#b9b3af' : '#222'
+                        color: currentPage === `/${page}` ? '#b9b3af' : '#222',
+                        fontSize: 'medium',
                     }}
                     >
                         {page}

@@ -2,9 +2,8 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import {
     Typography,
     Box,
-    Stack,
     Tooltip,
-    Button
+    Button,
 } from "@mui/material";
 import {
     FaReact ,
@@ -85,193 +84,90 @@ const theme = createTheme({
 });
 
 function Skills() {
-    const frontEnd = useRef(null);
-    const backEnd = useRef(null);
-    const devOps = useRef(null);
+    const categories = [
+        {
+            name: 'FRONTEND',
+            icons: [
+                <FaReact/>,
+                <FaCss3Alt/>,
+                <FaHtml5/>,
+                <FaVuejs/>,
+                <FaAngular/>,
+                <FaBootstrap/>,
+                <SiHandlebarsdotjs/>,
+                <SiTailwindcss/>,
+                <SiJquery/>,
+                <SiJavascript/>,
+                <SiTypescript/>
+            ],
+        },
+        {
+            name: 'BACKEND',
+            icons: [
+                <FaNode/>,
+                <SiMongodb/>,
+                <SiMysql/>,
+                <SiSequelize/>,
+                <SiGraphql/>,
+                <SiApollographql/>
+            ],
+        },
+        {
+            name: 'DEVOPS',
+            icons: [
+                <SiInsomnia/>,
+                <SiJest/>,
+                <SiHeroku/>,
+                <SiWebpack/>,
+                <FaGitAlt/>,
+                <FaGithub/>,
+                <FaNpm/>,
+                <TbBrandVscode/>
+            ],
+        },
+    ];
+
+    const categoriesRefs = categories.map(() => useRef(null));
 
     useEffect(() => {
         const tl = gsap.timeline();
 
-        tl.from(frontEnd.current, {
-            duration: 1,
-            opacity: 0,
-            y: 100,
-            ease: "power4.out",
-        
-        })
-
-        .from(backEnd.current, {
-            duration: 1,
-            opacity: 0,
-            y: 100,
-            ease: "power4.out",
-        })
-            .from(devOps.current, {
+        categoriesRefs.forEach((ref) => {
+            tl.from(ref.current, {
                 duration: 1,
                 opacity: 0,
                 y: 100,
                 ease: "power4.out",
-        })
-    });
+            });
+        });
+    }, [categoriesRefs]);
 
     return (
         <ThemeProvider theme={theme}>
             <Box className='skills-container'>
                 <p className='tech'>
                     Technologies I have worked with:
-                </p>
-                <Box ref={frontEnd}>
-                    <Typography>
-                        FRONTEND
-                    </Typography>
-                    <Box>
-                        <Stack sx={{ fontSize: 35 }} direction="row" spacing={1}>
-                            <Tooltip title='React.js' placement='top'>
-                                <Button>
-                                    <FaReact/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='CSS' placement='top'>
-                                <Button>
-                                    <FaCss3Alt/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='HTML5' placement='top'>
-                                <Button>
-                                    <FaHtml5/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='Vue.js' placement='top'>
-                                <Button>
-                                    <FaVuejs/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='Angular.js' placement='top'>
-                                <Button>
-                                    <FaAngular/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='Bootstrap' placement='top'>
-                                <Button>
-                                    <FaBootstrap/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='Handlebars.js' placement='top'>
-                                <Button>
-                                    <SiHandlebarsdotjs/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='Tailwind CSS' placement='top'>
-                                <Button>
-                                    <SiTailwindcss/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='jQuery' placement='top'>
-                                <Button>
-                                    <SiJquery/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='JavaScript' placement='top'>
-                                <Button>
-                                    <SiJavascript/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='TypeScript' placement='top'>
-                                <Button>
-                                    <SiTypescript/>
-                                </Button>
-                            </Tooltip>
-                        </Stack>
-                    </Box>   
-                </Box>
-                <Box ref={backEnd}>
-                    <Typography>
-                        BACKEND
-                    </Typography>
-                    <Box>
-                        <Stack sx={{ fontSize: 40 }} direction="row" spacing={1}>
-                            <Tooltip title='Node.js' placement='top'>
-                                <Button>
-                                    <FaNode/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='MongoDB' placement='top'>
-                                <Button>
-                                    <SiMongodb/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='MySQL' placement='top'>
-                                <Button>
-                                    <SiMysql/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='Sequelize' placement='top'>
-                                <Button>
-                                    <SiSequelize/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='GraphQL' placement='top'>
-                                <Button>
-                                    <SiGraphql/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='Apollo' placement='top'>
-                                <Button>
-                                    <SiApollographql/>
-                                </Button>
-                            </Tooltip>
-                        </Stack>
-                    </Box>   
-                </Box>
-                <Box ref={devOps}>
-                    <Typography>
-                        DEVOPS
-                    </Typography>
-                    <Box>
-                        <Stack sx={{ fontSize: 34 }} direction="row" spacing={1}>
-                            <Tooltip title='Insomnia' placement='top'>
-                                <Button>
-                                    <SiInsomnia/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='Jest' placement='top'>
-                                <Button>
-                                    <SiJest/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='Heroku' placement='top'>
-                                <Button>
-                                    <SiHeroku/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='Webpack' placement='top'>
-                                <Button>
-                                    <SiWebpack/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='Git' placement='top'>
-                                <Button>
-                                    <FaGitAlt/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='GitHub' placement='top'>
-                                <Button>
-                                    <FaGithub/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='npm' placement='top'>
-                                <Button>
-                                    <FaNpm/>
-                                </Button>
-                            </Tooltip>
-                            <Tooltip title='VSCode' placement='top'>
-                                <Button>
-                                    <TbBrandVscode/>
-                                </Button>
-                            </Tooltip>
-                        </Stack>
-                    </Box>   
-                </Box>
+                </p> 
+                {categories.map((category, index) => (
+                    <Box key={index} ref={categoriesRefs[index]}>
+                        <Typography variant="h6">
+                            {category.name}
+                        </Typography>
+                        <Box>
+                            <Box>
+                                <Box className='row' direction="row" spacing={1}>
+                                    {category.icons.map((Icon, iconIndex) => (
+                                        <Tooltip key={iconIndex} title={Icon.displayName || ''} placement='top'>
+                                            <Button>
+                                                {Icon}
+                                            </Button>
+                                        </Tooltip>
+                                    ))}
+                                </Box>
+                            </Box>
+                        </Box>
+                    </Box>
+                ))}
             </Box>
         </ThemeProvider>
     );

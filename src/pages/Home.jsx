@@ -33,7 +33,6 @@ function Home() {
                         ]}
                         speed={25}
                         style={{
-                            fontSize: '5em',
                             display: 'inline-block',
                             whiteSpace: 'pre-line',
                             textAlign: 'center',
