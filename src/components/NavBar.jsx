@@ -35,15 +35,23 @@ const pages = ['about', 'projects', 'skills', 'resume'];
 
 function NavBar() {
     const currentPage = useLocation().pathname;
-    const [hamburger, setHamburger] = useState(false);
+    // const [hamburger, setHamburger] = useState(false);
 
-    function toggleHamburger() {
-        setHamburger(!hamburger);
-    };
+    // function toggleHamburger() {
+    //     setHamburger(!hamburger);
+    // };
 
     return (
         <ThemeProvider theme={theme}>
-            <Box className={`nav-box ${hamburger ? 'menu-active' : 'hidden'}`}>
+            <Box 
+            // className={`nav-box ${hamburger ? 'menu-active' : 'hidden'}`}
+            sx={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'right',
+                flexGrow: 1
+            }}
+            >
                 <Box className='buttons-container'>
                     {pages.map((page) => (
                             <Button
@@ -76,10 +84,10 @@ function NavBar() {
                     </Button>
                 </Box>
             </Box>
-            <button className="hamburger sm:hidden w-7" type="button" onClick={toggleHamburger}>
+            {/* <button className="hamburger sm:hidden w-7" type="button" onClick={toggleHamburger}>
                 <MenuIcon>
                 </MenuIcon>
-            </button>
+            </button> */}
         </ThemeProvider>
     );
 };
