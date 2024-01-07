@@ -163,7 +163,7 @@ a:hover {
 }
 
 .worker {
-    height: 180px;
+    height: 600px;
 }
 
 .button-container {
@@ -266,6 +266,30 @@ a:hover {
     .nav-box.menu-active {
         display: none;
     }
+
+    .about-container {
+        padding-top: 210px;
+    }
+
+    .button-container {
+        padding-top: 210px;
+    }
+
+    .skills-container {
+        padding-top: 210px;
+    }
+
+    .projects {
+        padding-top: 210px;
+    }
+
+    .form-container {
+        padding-top: 120px;
+    }
+
+    .big-big-container {
+        margin-top: 300px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -320,5 +344,27 @@ a:hover {
 
     .hello-2 {
         font-size: 1em;
+    }
+}
+@media (max-width: 390px) {
+
+    .button-container {
+        padding-top: 210px;
+    }
+
+    .skills-container {
+        padding-top: 210px;
+    }
+
+    .projects {
+        padding-top: 200px;
+    }
+
+    .form-container {
+        padding-top: 120px;
+    }
+
+    .big-big-container {
+        margin-top: 250px;
     }
 }

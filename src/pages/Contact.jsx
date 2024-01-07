@@ -161,14 +161,22 @@ function Contact() {
         .then(
             (result) => {
                 console.log(result.text);
-                setResponseMessage({ message: '', type: '' });
+                setResponseMessage({
+                    message: 'Message sent successfully!',
+                    type: 'success',
+                });
                 setLoading(false);
             },
             (error) => {
                 console.log(error.text);
+                setResponseMessage({
+                    message: 'Error sending message. Please try again.',
+                    type: 'error',
+                });
+                setLoading(false);
             }
         );
-    };
+};
 
     return (
         <ThemeProvider theme={theme}>
@@ -232,6 +240,11 @@ function Contact() {
                     Send
                 </Button>
             </form>
+            {responseMessage.message && (
+            <Typography color={responseMessage.type === 'success' ? 'success' : 'error'} sx={{ marginTop: 2 }}>
+                {responseMessage.message}
+            </Typography>
+            )}
             </CardContent>
                     </Card>
                 </Grid>

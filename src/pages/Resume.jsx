@@ -3,7 +3,7 @@ import { Worker, Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import { pdfjs } from 'react-pdf';
 import { useState } from 'react';
-import myResume from '../assets/Caitlin_Ash _ Resume.pdf';
+import myResume from '../assets/resume.pdf';
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
 import { Box } from '@mui/material';
@@ -34,7 +34,7 @@ function Resume() {
 
     const onDownload = () => {
         const link = document.createElement('a');
-        link.download = `Caitlin_Ash_Resume.pdf`;
+        link.download = `resume.pdf`;
         link.href = myResume;
         link.click();
     };
