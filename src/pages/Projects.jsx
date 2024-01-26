@@ -7,6 +7,7 @@ import projectImageOne from "../assets/Screenshot 2023-11-18 at 3.25.23 PM.png";
 import projectImageTwo from "../assets/Screenshot 2024-01-03 at 10.49.47 PM.png";
 import projectImageThree from "../assets/Screenshot 2023-11-29 at 6.30.27 PM.png";
 import projectImageFour from "../assets/Screenshot 2023-11-18 at 3.47.16 PM.png";
+import projectImageFive from "../assets/Screenshot 2024-01-25 at 6.27.57 PM.png";
 
 import Project from '../components/Project';
 
@@ -41,6 +42,13 @@ const projectData = [
         projectDescription: 'A simple work day scheduler app powered by jQuery to track events.',
         viewCode: 'https://github.com/bycait27/work-day-scheduler',
         viewApp: 'https://bycait27.github.io/work-day-scheduler/',
+    },
+    {
+        imageUrl: projectImageFive,
+        projectTitle: 'The Tech Blog',
+        projectDescription: 'A CMS-Style tech blog site for developers following the MVC paradigm.',
+        viewCode: 'https://github.com/bycait27/tech-blog',
+        viewApp: 'https://the-tech-blog-927-bcf6bdd4bce2.herokuapp.com/',
     },
 ];
 
