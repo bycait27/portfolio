@@ -20,7 +20,7 @@ OR
 
 You can view and use the app via the deployed Netlify link. 
 
-[Caitlin Ash | Portfolio](https://main--musical-truffle-35c061.netlify.app/)
+[Caitlin Ash | Portfolio](http://caitlin-ash/)
 
 ## Usage
 
