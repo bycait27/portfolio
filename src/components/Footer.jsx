@@ -40,7 +40,7 @@ function Footer() {
                 </a>
                 </Stack>
                 <Typography className='footer-text'>
-                    © 2023 Caitlin Ash
+                    © 2024 Caitlin Ash
                 </Typography>
             </Box>
         </ThemeProvider>
