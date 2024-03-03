@@ -91,14 +91,14 @@ function Skills() {
                 <FaReact/>,
                 <FaCss3Alt/>,
                 <FaHtml5/>,
-                <FaVuejs/>,
-                <FaAngular/>,
+                // <FaVuejs/>,
+                // <FaAngular/>,
                 <FaBootstrap/>,
                 <SiHandlebarsdotjs/>,
                 <SiTailwindcss/>,
                 <SiJquery/>,
                 <SiJavascript/>,
-                <SiTypescript/>
+                // <SiTypescript/>
             ],
         },
         {
