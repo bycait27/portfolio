@@ -145,7 +145,7 @@ function Skills() {
     return (
         <ThemeProvider theme={theme}>
             <Box className='skills-container'>
-                <p className='tech'>
+                {/* <p className='tech'>
                     Technologies I have worked with:
                 </p> 
                 {categories.map((category, index) => (
@@ -168,7 +168,7 @@ function Skills() {
                             </Box>
                         </Box>
                     </Box>
-                ))}
+                ))} */}
             </Box>
         </ThemeProvider>
     );
