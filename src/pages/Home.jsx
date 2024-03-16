@@ -28,7 +28,7 @@ function Home() {
                 <Box className='big-container'>
                 <TypeAnimation className='hello-2'
                         sequence={[
-                            'HI, I\'M CAITLIN,\nA FULL-STACK\nWEB DEVELOPER',
+                            'Hi, I\'m Caitlin,\na full-stack\nweb developer',
                             1000
                         ]}
                         speed={25}

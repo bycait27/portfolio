@@ -14,6 +14,8 @@ import {
 import { validateEmail } from "../utils/helper";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
+import notesImage from '../assets/notes.jpeg';
+
 const theme = createTheme({
     palette: {
       primary: {
@@ -29,16 +31,20 @@ const theme = createTheme({
                     "&:hover": { bgcolor: '#b9b3af' },
                     paddingRight: 5,
                     paddingLeft: 5,
-                    fontWeight: 'bolder'
+                    fontWeight: 'bolder',
+                    border: '#222 solid 1px'
                 }
             }
         },
         MuiCard: {
             styleOverrides: {
                 root: {
-                    backgroundColor: '#b9b3af',
+                    backgroundImage: `url(${notesImage})`,
+                    // backgroundColor: '#b9b3af',
                     borderRadius: 5,
-                    margin: 4,                }
+                    margin: 4,
+                    border: '#222 solid 1px'
+                }
             }
         },
         MuiTypography: {

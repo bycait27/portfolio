@@ -12,6 +12,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
+import notesImage from '../assets/notes.jpeg';
+
 const theme = createTheme({
     palette: {
       primary: {
@@ -22,9 +24,11 @@ const theme = createTheme({
         MuiButton: {
             styleOverrides: {
                 root: {
-                    color: '#222',
-                    "&:hover": { color: '#f5fef8' },
-                    padding: 1,
+                    color: 'white',
+                    backgroundColor: '#222',
+                    "&:hover": { color: '#222', backgroundColor: 'white' },
+                    padding: 4,
+                    border: '#222 solid 1px'
                 }
             }
         },
@@ -32,9 +36,11 @@ const theme = createTheme({
             styleOverrides: {
                 root: {
                     maxWidth: 300,
-                    backgroundColor: '#b9b3af',
+                    backgroundImage: `url(${notesImage})`,
+                    // backgroundColor: '#b9b3af',
                     borderRadius: 5,
-                    padding: 15
+                    padding: 15,
+                    border: '#222 solid 1px'
                 }
             }
         },
@@ -43,7 +49,8 @@ const theme = createTheme({
                 root: {
                     height: 200,
                     borderRadius: 2,
-                    padding: 2
+                    padding: 2,
+                    border: '#222 solid 1px'
                 }
             }
         }
@@ -55,8 +62,8 @@ function Project({ imageUrl, projectTitle, projectDescription, viewCode, viewApp
         <ThemeProvider theme={theme}>
             <Box className='project-card'>
                 <Card>
-                    <CardMedia image={imageUrl}>
-                    </CardMedia>
+                    {/* <CardMedia image={imageUrl}>
+                    </CardMedia> */}
                     <CardContent>
                         <Typography sx={{ 
                             fontSize: 'large', 
