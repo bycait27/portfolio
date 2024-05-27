@@ -4,7 +4,7 @@ import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 // import '../styles/globals.css';
-// GridBackground
+import { GridBackground } from '@/components/ui/GridBackground';
 // SmoothScroller
 
 const inter = Inter({ subsets: ['latin'] });
@@ -43,6 +43,7 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             {children}
+            <GridBackground />
             {/* add grid background */}
             {/* add smooth scroller */}
           </ThemeProvider>
