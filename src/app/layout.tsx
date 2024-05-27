@@ -5,7 +5,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 // import '../styles/globals.css';
 import { GridBackground } from '@/components/ui/GridBackground';
-// SmoothScroller
+import SmoothScroll from '@/components/ui/SmoothScroll';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -44,8 +44,7 @@ export default function RootLayout({
           <ThemeProvider theme={theme}>
             {children}
             <GridBackground />
-            {/* add grid background */}
-            {/* add smooth scroller */}
+            <SmoothScroll />
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
