@@ -1,6 +1,6 @@
 'use client';
 
-// import navbar
+import Navbar from '../components/Navbar';
 // import hero
 // import about
 // import projects
@@ -10,8 +10,21 @@
 import { useState } from 'react';
 
 export default function Home() {
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+
   return (
-  <>
-  </>
+  <div>
+    <div
+      id='home'
+    >
+      <Navbar setActiveSection={setActiveSection} />
+    </div>
+    {/* add hero component */}
+    {/* add about component */}
+    {/* add projects component */}
+    {/* add skills component */}
+    {/* add footer component */}
+    {/* add chat component */}
+  </div>
   );
 };
