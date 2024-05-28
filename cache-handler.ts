@@ -1,16 +1,16 @@
 const cache = new Map();
 
 class CacheHandler {
-  constructor(options) {
+  constructor(options: any) {
     this.options = options;
   }
 
-  async get(key) {
+  async get(key: any) {
     // This could be stored anywhere, like durable storage
     return cache.get(key);
   }
 
-  async set(key, data, ctx) {
+  async set(key: any, data: any, ctx: any) {
     // This could be stored anywhere, like durable storage
     cache.set(key, {
       value: data,
@@ -19,7 +19,7 @@ class CacheHandler {
     });
   }
 
-  async revalidateTag(tag) {
+  async revalidateTag(tag: any) {
     // Iterate over all entries in the cache
     for (let [key, value] of cache) {
       // If the value's tags include the specified tag, delete this entry
