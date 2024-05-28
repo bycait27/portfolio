@@ -18,14 +18,24 @@ const faqs = [
     },
 ];
 
+type Faq = {
+    question: string;
+    answer: string;
+};
+
+type Chat = {
+    message: string;
+    type: 'bot' | 'user';
+};
+
 export default function Chatbot() {
-    const [conversation, setConversation] = useState([
+    const [conversation, setConversation] = useState<Chat[]>([
         { message: 'Hi!', type: 'bot' },
         { message: 'What would you like to know?', type: 'bot' }
     ]);
-    const [clickedQuestions, setClickedQuestions] = useState(new Set());
+    const [clickedQuestions, setClickedQuestions] = useState<Set<string>>(new Set());
 
-    const handleQuestionClick = (faq) => {
+    const handleQuestionClick = (faq: Faq) => {
         if (clickedQuestions.has(faq.question)) return;
 
         setConversation((prev) => [
@@ -34,12 +44,18 @@ export default function Chatbot() {
             { message: faq.answer, type: 'bot' }
         ]);
 
-        setClickedQuestions((prev) => new Set(prev).add(faq.question));
+        setClickedQuestions((prev) => {
+            const newSet = new Set(prev);
+            newSet.add(faq.question);
+            return newSet;
+        });
     };
 
     useEffect(() => {
         const chatContainer = document.querySelector(`.${styles.chatContainer}`);
-        chatContainer.scrollTop = chatContainer.scrollHeight;
+        if (chatContainer) {
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+        }
     }, [conversation]);
 
     return (
