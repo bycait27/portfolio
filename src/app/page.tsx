@@ -2,7 +2,7 @@
 
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-// import about
+import About from '../components/sections/About';
 // import projects
 // import skills
 // import chat
@@ -22,7 +22,11 @@ export default function Home() {
     <div>
       <Hero />
     </div>
-    {/* add about component */}
+    <div
+      id='#about'
+    >
+      <About />
+    </div>
     {/* add projects component */}
     {/* add skills component */}
     {/* add footer component */}
