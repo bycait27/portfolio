@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 // import navbar
 // import hero
@@ -14,4 +14,4 @@ export default function Home() {
   <>
   </>
   );
-}
+};
