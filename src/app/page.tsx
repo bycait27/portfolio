@@ -6,7 +6,7 @@ import About from '../components/sections/About';
 import Projects from '../components/sections/Projects';
 import Skills from '../components/sections/Skills';
 import Chat from '../components/sections/Chat';
-// import footer
+import Footer from '../components/Footer';
 
 import { useState } from 'react';
 
@@ -38,7 +38,7 @@ export default function Home() {
     >
       <Skills />
     </div>
-    {/* add footer component */}
+    <Footer />
     {activeSection === 'Chat' && <Chat />}
   </div>
   );
