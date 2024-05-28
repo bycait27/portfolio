@@ -1,7 +1,7 @@
 'use client';
 
 import Navbar from '../components/Navbar';
-// import hero
+import Hero from '../components/Hero';
 // import about
 // import projects
 // import skills
@@ -19,7 +19,9 @@ export default function Home() {
     >
       <Navbar setActiveSection={setActiveSection} />
     </div>
-    {/* add hero component */}
+    <div>
+      <Hero />
+    </div>
     {/* add about component */}
     {/* add projects component */}
     {/* add skills component */}
