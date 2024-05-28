@@ -16,7 +16,7 @@ export default function Home() {
   return (
   <div>
     <div
-      id='home'
+      id='#home'
     >
       <Navbar setActiveSection={setActiveSection} />
     </div>
@@ -24,17 +24,17 @@ export default function Home() {
       <Hero />
     </div>
     <div
-      id='#about'
+      id='about'
     >
       <About />
     </div>
     <div
-      id='#projects'
+      id='projects'
     >
       <Projects />
     </div>
     <div
-      id='#skills'
+      id='skills'
     >
       <Skills />
     </div>

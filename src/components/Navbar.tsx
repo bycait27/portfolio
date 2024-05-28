@@ -6,7 +6,7 @@ import { Menu, MenuItem } from './ui/NavbarMenu';
 import { cn } from '../utils/cn';
 
 interface NavbarProps {
-    setActiveSection: (section: string) => void;
+    setActiveSection: (section: string | null) => void;
 };
 
 export default function Navbar({ setActiveSection }: NavbarProps) {
@@ -27,7 +27,7 @@ export default function Navbar({ setActiveSection }: NavbarProps) {
             className='relative w-full flex items-center justify-center'
         >
             <Nav
-                classname='pt-6 top-2'
+                className='pt-6 top-2'
                 setActive={handleSetActive}
                 active={active}
             />
@@ -36,7 +36,7 @@ export default function Navbar({ setActiveSection }: NavbarProps) {
 };
 
 interface NavProps {
-    classname?: string;
+    className?: string;
     setActive: (item: string) => void;
     active: string | null;
 };
@@ -46,7 +46,9 @@ function Nav({ className, setActive, active }: NavProps) {
         <div
             className={cn('fixed text-lg top-10 max-w-2xl flex', className)}
         >
-            <Menu setActive={setActive}>
+            <Menu 
+                setActive={setActive}
+            >
                 <a
                     className='pr-3'
                     href='#home'
