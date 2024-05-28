@@ -1,0 +1,28 @@
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.techList {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.techItem {
+    background-color: #2e2e2e;
+    color: #ccd0cf;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
