@@ -12,7 +12,7 @@ interface NavbarProps {
 export default function Navbar({ setActiveSection }: NavbarProps) {
     const [active, setActive] = useState<string | null>(null);
 
-    const handleSetActive = (item: string) => {
+    const handleSetActive = (item: string | null) => {
         if (active === item) {
             setActive(null);
             setActiveSection(null);
