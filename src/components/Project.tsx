@@ -41,7 +41,15 @@ const theme = createTheme({
     },
 });
 
-export default function Project({ projectTitle, projectDescription, viewCode, viewApp, tech }) {
+interface ProjectProps {
+    projectTitle: string;
+    projectDescription: string;
+    viewCode: string;
+    viewApp: string;
+    tech: string[];
+};
+
+export default function Project({ projectTitle, projectDescription, viewCode, viewApp, tech }: ProjectProps) {
     return (
         <ThemeProvider 
             theme={theme}
@@ -86,7 +94,7 @@ export default function Project({ projectTitle, projectDescription, viewCode, vi
                                 key={index}
                                 className={styles.techItem}
                             >
-                                {...tech}
+                                {tech}
                             </span>
                         ))}
                     </div>
