@@ -37,7 +37,7 @@ export default function Navbar({ setActiveSection }: NavbarProps) {
 
 interface NavProps {
     className?: string;
-    setActive: (item: string) => void;
+    setActive: (item: string | null) => void;
     active: string | null;
 };
 
