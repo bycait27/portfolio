@@ -1,6 +1,7 @@
 const cache = new Map();
 
 class CacheHandler {
+    options: any;
   constructor(options: any) {
     this.options = options;
   }
