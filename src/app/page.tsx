@@ -3,7 +3,7 @@
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/sections/About';
-// import projects
+import Projects from '../components/sections/Projects';
 // import skills
 // import chat
 
@@ -27,7 +27,11 @@ export default function Home() {
     >
       <About />
     </div>
-    {/* add projects component */}
+    <div
+      id='#projects'
+    >
+      <Projects />
+    </div>
     {/* add skills component */}
     {/* add footer component */}
     {/* add chat component */}
