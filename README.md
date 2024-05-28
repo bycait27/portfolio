@@ -26,17 +26,15 @@ You can view and use the app via the deployed Netlify link.
 
 Just simply click on each section of the navigation bar to navigate quickly between sections on the homepage!
 
-![screenshot]()
+![screenshot](./assets/previewOne.png)
 
-![screenshot]()
+![screenshot](./assets/previewTwo.png)
 
-![screenshot]()
+![screenshot](./assets/previewThree.png)
 
-![screenshot]()
+![screenshot](./assets/previewFour.png)
 
-![screenshot]()
-
-![screenshot]()
+![screenshot](./assets/previewFive.png)
 
 ## Credits
 
