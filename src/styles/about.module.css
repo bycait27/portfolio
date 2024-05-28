@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.header {
+    font-size: 25px;
+    padding: 30px;
+
+}
+
+.divider {
+    background-color: #ccd0cf;
+    height: 1px;
+}
+
+.paragraph {
+    line-height: 35px;
+    padding: 20px;
+    margin: 40px;
+}
