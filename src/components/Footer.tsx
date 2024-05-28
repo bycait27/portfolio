@@ -10,8 +10,6 @@ import React, { useState } from 'react';
 
 import styles from '../styles/footer.module.css';
 
-// import myResume
-
 export default function Footer() {
     return (
         <div className={styles.container}>
@@ -24,41 +22,31 @@ export default function Footer() {
                 target="_blank" className={styles.link}>
                     <LinkedInIcon sx={{ fontSize: 30 }} />
                 </a>
-                <Button
-                variant='contained'
-                endIcon={<DownloadIcon />}
-                sx={{
-                    color: '#222',
-                    backgroundColor: '#ccd0cf',
-                    "&:hover": { color: '#ccd0cf', backgroundColor: '#1e1f22ac' },
-                    padding: 0.5,
-                    margin: 1,
-                    border: 'white solid 1px',
-                    fontSize: 12
-                }}
+                <a
+                    href='/files/resume.pdf' 
+                    target='_blank'
+                    rel='noopener noreferrer'
                 >
-                    My Resume
-                </Button>
+                    <Button
+                    variant='contained'
+                    endIcon={<DownloadIcon />}
+                    sx={{
+                        color: '#222',
+                        backgroundColor: '#ccd0cf',
+                        "&:hover": { color: '#ccd0cf', backgroundColor: '#1e1f22ac' },
+                        padding: 0.5,
+                        margin: 1,
+                        border: 'white solid 1px',
+                        fontSize: 12
+                    }}
+                    >
+                        My Resume
+                    </Button>
+                </a>
             </div>
             <div className={styles.copyright}>
                 © 2024 Caitlin Ash
             </div>
         </div>
     );
-}
-
-
-// const onDownload = () => {
-//     const link = document.createElement('a');
-//     link.download = `resume.pdf`;
-//     link.href = myResume;
-//     link.click();
-// };
-
-
-// <Button onClick={onDownload}
-//                     variant='contained' 
-//                     endIcon={<DownloadIcon />}
-//                 >
-//                     Download Resume
-//                 </Button>
+};

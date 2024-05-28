@@ -21,7 +21,7 @@ const projectData = [
         projectTitle: 'Weather Dashboard',
         projectDescription: 'A web app that allows users to view the current and 5-day weather forecast.',
         viewCode: 'https://github.com/bycait27/weather-dashboard',
-        viewApp: 'https://willowy-medovik-414add.netlify.app/',
+        viewApp: 'https://weather-dashboard7.netlify.app/',
         tech: ['javascript', 'html', 'css']
     },
     {

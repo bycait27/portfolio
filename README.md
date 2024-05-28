@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a simple web portfolio built with React.js to showcase and share my projects, resume, and a little bit about me. There is also a section to contact me! The styling of this portfolio was made with Material UI.
+This is a simple web portfolio built with Next.js and TypeScript to showcase and share my projects, skills, and a little bit about me. There is also a chat bot that can answer some questions you may have about myself as a developer! The styling of this portfolio was made with CSS Modules, TailwindCSS, and Material UI.
 
 ## Table of Contents
 
@@ -24,22 +24,27 @@ You can view and use the app via the deployed Netlify link.
 
 ## Usage
 
-Just simply click on each section of the navigation bar to navigate the portfolio!
+Just simply click on each section of the navigation bar to navigate quickly between sections on the homepage!
 
-![screenshot](./src/assets/Screenshot%202024-01-07%20at%2012.13.48 AM.png)
+![screenshot]()
 
-![screenshot](./src/assets/Screenshot%202024-01-07%20at%2012.13.58 AM.png)
+![screenshot]()
 
-![screenshot](./src/assets/Screenshot%202024-01-07%20at%2012.14.08 AM.png)
+![screenshot]()
 
-![screenshot](./src/assets/Screenshot%202024-01-07%20at%2012.14.16 AM.png)
+![screenshot]()
 
-![screenshot](./src/assets/Screenshot%202024-01-07%20at%2012.15.12 AM.png)
+![screenshot]()
 
-![screenshot](./src/assets/Screenshot%202024-01-07%20at%2012.14.39 AM.png)
+![screenshot]()
 
 ## Credits
 
+[Next.js Documentation](https://nextjs.org/)
+
+[TailwindCSS Documentation](https://tailwindcss.com/)
+
+[TypeScript Documentation](https://www.typescriptlang.org/docs/)
+
 [Material UI Documentation](https://mui.com/material-ui/getting-started/)
 
-[React Documentation](https://react.dev/learn)
