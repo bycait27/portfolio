@@ -30,6 +30,7 @@ body {
   margin: 30px;
   padding-left: 100px;
   padding-right: 100px;
+  color: #ccd0cf
 }
 
 @layer utilities {
