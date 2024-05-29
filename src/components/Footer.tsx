@@ -23,7 +23,7 @@ export default function Footer() {
                     <LinkedInIcon sx={{ fontSize: 30 }} />
                 </a>
                 <a
-                    href='/files/resume.pdf' 
+                    href='/files/resumeTwo.pdf' 
                     target='_blank'
                     rel='noopener noreferrer'
                 >
