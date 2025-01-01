@@ -5,7 +5,6 @@ export default function Skills() {
         {
             tech: [
                 'javascript',
-                'typescript',
                 'handlebars.js',
                 'react',
                 'next.js',
@@ -44,8 +43,6 @@ export default function Skills() {
         },
         {
             tech: [
-                'vue.js',
-                'angular.js',
                 'firestore'
             ]
         }
