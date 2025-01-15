@@ -14,7 +14,7 @@ const faqs = [
     },
     {
         question: 'What tech stack do you use?',
-        answer: 'I am currently using Typescript, Next.js, Firebase, and GraphQL!'
+        answer: 'I am currently using JavaScript, Next.js, Firebase, and GraphQL!'
     },
 ];
 
