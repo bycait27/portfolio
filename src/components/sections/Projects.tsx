@@ -35,7 +35,7 @@ const projectData = [
         projectTitle: 'The Tech Blog',
         projectDescription: 'A CMS-Style tech blog site for developers following the MVC paradigm.',
         viewCode: 'https://github.com/bycait27/tech-blog',
-        viewApp: 'https://the-tech-blog-927-bcf6bdd4bce2.herokuapp.com/',
+        viewApp: 'https://the-tech-blog7-f8ee982770ad.herokuapp.com/',
         tech: ['javascript', 'handlebars.js', 'sequelize', 'mysql', 'express']
     },
 ];
