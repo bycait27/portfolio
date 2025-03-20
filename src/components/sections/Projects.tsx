@@ -7,7 +7,7 @@ const projectData = [
         projectTitle: 'Book Search Engine',
         projectDescription: 'A Google Books GraphQL API built using the MERN stack.',
         viewCode: 'https://github.com/bycait27/book-search-engine',
-        viewApp: 'https://guarded-citadel-13114-d18206c34db8.herokuapp.com/',
+        viewApp: 'https://book-search-engine-caitlins-projects-dc84348c.vercel.app/',
         tech: ['javascript', 'react', 'mongodb', 'graphql', 'apollo', 'express']
     },
     {
