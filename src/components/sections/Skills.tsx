@@ -43,11 +43,11 @@ export default function Skills() {
                 'netlify',
             ],
         },
-        {
-            tech: [
-                'firebase'
-            ]
-        }
+        // {
+        //     tech: [
+        //         'firebase'
+        //     ]
+        // }
     ]
 
     return (

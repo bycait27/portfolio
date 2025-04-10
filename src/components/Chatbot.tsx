@@ -12,10 +12,10 @@ const faqs = [
         question: 'How can I contact you?',
         answer: 'You can contact me at my email: caitlinba27@gmail.com!',
     },
-    {
-        question: 'What tech stack do you use?',
-        answer: 'I am currently using JavaScript, Next.js, Firebase, and GraphQL!'
-    },
+    // {
+    //     question: 'What tech stack do you use?',
+    //     answer: 'I am currently using JavaScript, Next.js, Firebase, and GraphQL!'
+    // },
 ];
 
 type Faq = {
