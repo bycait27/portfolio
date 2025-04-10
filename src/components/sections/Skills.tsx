@@ -6,10 +6,12 @@ export default function Skills() {
             tech: [
                 'javascript',
                 'java',
-                'C',
+                'python',
+                'c',
                 'handlebars.js',
-                'react',
+                'react.js',
                 'next.js',
+                'springboot',
                 'jquery',
                 'html5',
                 'css3',
@@ -41,6 +43,7 @@ export default function Skills() {
                 'webpack',
                 'heroku',
                 'netlify',
+                'vercel',
             ],
         },
         // {
