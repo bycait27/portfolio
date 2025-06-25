@@ -8,7 +8,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
     };
 
     return (
-        <div className='flex flex-row justify-between items-center w-full px-4 py-4'>
+        <div className='flex flex-row text-text-primary font-bold justify-between items-center w-full px-4 py-4'>
             {/* left side - evenly spaced */}
             <div className="flex items-center space-x-6 p-3">
                 {/* social icons */}
