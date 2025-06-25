@@ -9,7 +9,6 @@ import {
 } from '@mui/material';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-
 import styles from '../styles/project.module.css';
 
 const theme = createTheme({
@@ -41,15 +40,7 @@ const theme = createTheme({
     },
 });
 
-interface ProjectProps {
-    projectTitle: string;
-    projectDescription: string;
-    viewCode: string;
-    viewApp: string;
-    tech: string[];
-};
-
-export default function Project({ projectTitle, projectDescription, viewCode, viewApp, tech }: ProjectProps) {
+export default function Project({ projectTitle, projectDescription, viewCode, viewApp, tech }) {
     return (
         <ThemeProvider 
             theme={theme}

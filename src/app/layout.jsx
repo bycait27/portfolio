@@ -1,26 +1,13 @@
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '../theme';
 import '../styles/globals.css';
-import { GridBackground } from '@/components/ui/GridBackground';
-import SmoothScroll from '@/components/ui/SmoothScroll';
+// import SmoothScroll from '@/components/ui/SmoothScroll';
 
 const inter = Inter({ subsets: ['latin'] });
 
-type Icon = {
-  rel: string;
-  type: string;
-  sizes: string;
-  url: string;
-};
-
-type Icons = {
-  icon: Icon[];
-};
-
-export const metadata: Metadata & { icons: Icons } = {
+export const metadata = {
   title: 'Caitlin Ash | Portfolio',
   icons: {
     icon: [
@@ -30,17 +17,13 @@ export const metadata: Metadata & { icons: Icons } = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }) {
   const icons = metadata.icons?.icon ?? [];
 
   return (
     <html lang="en">
       <head>
-        <title>{metadata.title as React.ReactNode}</title>
+        <title>{metadata.title}</title>
         {icons.map((icon, index) => (
           <link 
             key={index}
@@ -55,8 +38,7 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             {children}
-            <GridBackground />
-            <SmoothScroll />
+            {/* <SmoothScroll /> */}
           </ThemeProvider>
         </AppRouterCacheProvider>
       </body>
