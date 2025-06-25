@@ -2,7 +2,11 @@
 
 import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa';
 
-export default function Navbar({}) {
+export default function Navbar({ activeSection, setActiveSection }) {
+    const handleNavClick = (section) => {
+        setActiveSection(section);
+    };
+
     return (
         <div className='flex flex-row justify-between items-center w-full px-4 py-4'>
             {/* left side - evenly spaced */}
@@ -23,9 +27,30 @@ export default function Navbar({}) {
             
             {/* right side - evenly spaced */}
             <div className="flex items-center space-x-6 p-3">
-                <a className='hover:text-text-secondary transition-colors' href='#about'>About</a>
-                <a className='hover:text-text-secondary transition-colors' href='#projects'>Projects</a>
-                <a className='hover:text-text-secondary transition-colors' href='#skills'>Skills</a>
+                <button 
+                    className={`hover:text-text-secondary transition-colors ${activeSection === 'home' ? 'text-text-secondary' : ''}`}
+                    onClick={() => handleNavClick('home')}
+                >
+                    Home
+                </button>
+                <button 
+                    className={`hover:text-text-secondary transition-colors ${activeSection === 'about' ? 'text-text-secondary' : ''}`}
+                    onClick={() => handleNavClick('about')}
+                >
+                    About
+                </button>
+                <button 
+                    className={`hover:text-text-secondary transition-colors ${activeSection === 'projects' ? 'text-text-secondary' : ''}`}
+                    onClick={() => handleNavClick('projects')}
+                >
+                    Projects
+                </button>
+                <button 
+                    className={`hover:text-text-secondary transition-colors ${activeSection === 'skills' ? 'text-text-secondary' : ''}`}
+                    onClick={() => handleNavClick('skills')}
+                >
+                    Skills
+                </button>
                 <a className='text-text-tertiary hover:text-text-secondary transition-colors' href='#contact-me'>Contact Me</a>
             </div>
         </div>
