@@ -4,28 +4,21 @@ const config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "class", // enable class-based dark mode 
+  darkMode: "class",
   theme: {
     extend: {
-      fontFamily: {
-        'roboto': ['Roboto', 'sans-serif'],
-      },
       colors: {
-        // define light mode theme
         background: {
-          primary: "#f5f5f5",      // light mode background
-          secondary: "#e6e6e6",    // light mode cards/sections
+          primary: "var(--background-primary)",
+          secondary: "var(--background-secondary)",
         },
         text: {
-          primary: "#17171a",      // light mode primary text
-          secondary: "#ff6d6b",    // light mode secondary text
-          tertiary: "#f0ad10",      // light mode tertiary text
-          highlight: "#abc1ff",     // light mode highlight
+          primary: "var(--text-primary)",
+          secondary: "var(--text-secondary)",
+          tertiary: "var(--text-tertiary)",
+          highlight: "var(--text-highlight)",
         },
       },
-      dropShadow: {
-        "lg": "2px 2px 10px rgba(245,245,245,0.9)",
-      }
     },
   },
   plugins: [],

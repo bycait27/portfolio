@@ -1,6 +1,4 @@
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
 import '../styles/globals.css';
-// import SmoothScroll from '@/components/ui/SmoothScroll';
 
 export const metadata = {
   title: 'Caitlin Ash | Portfolio',
@@ -30,10 +28,7 @@ export default function RootLayout({ children }) {
         ))}
       </head>
       <body className="font-roboto">
-        <AppRouterCacheProvider>
-            {children}
-            {/* <SmoothScroll /> */}
-        </AppRouterCacheProvider>
+        {children}
       </body>
     </html>
   );

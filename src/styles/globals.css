@@ -13,8 +13,18 @@
     --text-highlight: #abc1ff;
   }
 
+  .dark {
+    --background-primary: #0f0f0f;
+    --background-secondary: #1a1a1a;
+    --text-primary: #ffffff;
+    --text-secondary: #ff6d6b;
+    --text-tertiary: #f0ad10;
+    --text-highlight: #abc1ff;
+  }
+
   body {
-    @apply bg-background-primary text-text-primary;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
     @apply flex flex-col box-border;
     @apply m-8 px-24;
     @apply transition-colors duration-300;
@@ -26,10 +36,10 @@
       @apply p-0 m-0;
     }
   }
+}
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
 }

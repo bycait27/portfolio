@@ -60,13 +60,6 @@ export default function Skills() {
                     <div>
                         <div>
                             <div>
-                            {technologies.flatMap((category) =>
-                            category.tech.map((tech, techIndex) => (
-                                <div key={techIndex}>
-                                    {tech}
-                                </div>
-                            ))
-                        )}
                             </div>
                         </div>
                     </div>

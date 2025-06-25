@@ -1,43 +1,18 @@
-import {
-    Button
-} from '@mui/material';
-
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import DownloadIcon from '@mui/icons-material/Download';
-
 export default function Footer() {
     return (
         <div>
             <div>
                 <a href='https://github.com/bycait27' 
                 target="_blank">
-                    <GitHubIcon sx={{ fontSize: 30 }} />
                 </a>
                 <a href='https://www.linkedin.com/in/caitlin-ash-14409423b/' 
                 target="_blank">
-                    <LinkedInIcon sx={{ fontSize: 30 }} />
                 </a>
                 <a
                     href='/files/resumeThree.pdf' 
                     target='_blank'
                     rel='noopener noreferrer'
                 >
-                    <Button
-                    variant='contained'
-                    endIcon={<DownloadIcon />}
-                    sx={{
-                        color: '#222',
-                        backgroundColor: '#ccd0cf',
-                        "&:hover": { color: '#ccd0cf', backgroundColor: '#1e1f22ac' },
-                        padding: 0.5,
-                        margin: 1,
-                        border: 'white solid 1px',
-                        fontSize: 12
-                    }}
-                    >
-                        My Resume
-                    </Button>
                 </a>
             </div>
             <div>
