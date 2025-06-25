@@ -2,10 +2,10 @@
 
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
-import About from '../components/sections/About';
-import Projects from '../components/sections/Projects';
-import Skills from '../components/sections/Skills';
-import Footer from '../components/Footer';
+// import About from '../components/sections/About';
+// import Projects from '../components/sections/Projects';
+// import Skills from '../components/sections/Skills';
+// import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       <div>
         <Hero />
       </div>
-      <div id="about">
+      {/* <div id="about">
         <About />
       </div>
       <div id="projects">
@@ -25,7 +25,7 @@ export default function Home() {
       <div id="skills">
         <Skills />
       </div>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
