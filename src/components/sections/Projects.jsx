@@ -1,7 +1,5 @@
 import Project from '../Project'
 
-import styles from '../../styles/projects.module.css';
-
 const projectData = [
     {
         projectTitle: 'The Tech Blog',
@@ -43,15 +41,12 @@ const projectData = [
 export default function Projects() {
     return (
         <div
-            className={styles.projects}
         >
             <h1
-                className={styles.header}
             >
                 Projects
             </h1>
             <div
-                className={styles.divider}
             >
             </div>
             <div>

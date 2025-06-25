@@ -1,5 +1,3 @@
-import styles from '../../styles/skills.module.css';
-
 export default function Skills() {
     const technologies = [
         {
@@ -54,17 +52,17 @@ export default function Skills() {
     ]
 
     return (
-        <div className={styles.container}>
+        <div>
             <div>
-                <h1 className={styles.header}>Skills</h1>
+                <h1>Skills</h1>
             </div>
-            <div className={styles.divider}></div>
+            <div></div>
                     <div>
                         <div>
-                            <div className={styles.skills}>
+                            <div>
                             {technologies.flatMap((category) =>
                             category.tech.map((tech, techIndex) => (
-                                <div key={techIndex} className={styles.skill}>
+                                <div key={techIndex}>
                                     {tech}
                                 </div>
                             ))

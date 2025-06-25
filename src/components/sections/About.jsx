@@ -1,23 +1,15 @@
-import React, { useState } from 'react';
-
-import styles from '../../styles/about.module.css';
-
 export default function About() {
     return (
         <div
-            className={styles.container}
         >
             <h1
-                className={styles.header}
             >
                 About
             </h1>
             <div
-                className={styles.divider}
             >
             </div>
             <div
-                className={styles.paragraph}
             >
                 <p>
                     I am a full-stack web developer and graduate student in computer science. My passion for technology and problem-solving, shaped by a rigorous coding bootcamp and a background in 

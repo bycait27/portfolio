@@ -6,20 +6,16 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DownloadIcon from '@mui/icons-material/Download';
 
-import React, { useState } from 'react';
-
-import styles from '../styles/footer.module.css';
-
 export default function Footer() {
     return (
-        <div className={styles.container}>
+        <div>
             <div>
                 <a href='https://github.com/bycait27' 
-                target="_blank" className={styles.link}>
+                target="_blank">
                     <GitHubIcon sx={{ fontSize: 30 }} />
                 </a>
                 <a href='https://www.linkedin.com/in/caitlin-ash-14409423b/' 
-                target="_blank" className={styles.link}>
+                target="_blank">
                     <LinkedInIcon sx={{ fontSize: 30 }} />
                 </a>
                 <a
@@ -44,7 +40,7 @@ export default function Footer() {
                     </Button>
                 </a>
             </div>
-            <div className={styles.copyright}>
+            <div>
                 © 2024 Caitlin Ash
             </div>
         </div>

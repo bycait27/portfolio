@@ -9,7 +9,6 @@ import {
 } from '@mui/material';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import styles from '../styles/project.module.css';
 
 const theme = createTheme({
     components: {
@@ -46,10 +45,10 @@ export default function Project({ projectTitle, projectDescription, viewCode, vi
             theme={theme}
         >
             <div
-                className={styles.container}
+        
             >
                 <Card
-                    className={styles.card}
+                    
                 >
                     <CardContent>
                         <Typography>
@@ -78,12 +77,12 @@ export default function Project({ projectTitle, projectDescription, viewCode, vi
                         </a>
                     </CardActions>
                     <div
-                        className={styles.techList}
+                        
                     >
                         {tech.map((tech, index) => (
                             <span
                                 key={index}
-                                className={styles.techItem}
+                                
                             >
                                 {tech}
                             </span>

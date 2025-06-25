@@ -11,7 +11,7 @@ const SmoothScroll = () => {
     // Initialize Lenis on the first render
     if (!lenisRef.current) {
       lenisRef.current = new Lenis();
-      const raf = (time: number) => {
+      const raf = (time) => {
         lenisRef.current?.raf(time);
         rafHandleRef.current = requestAnimationFrame(raf);
       };
@@ -29,7 +29,7 @@ const SmoothScroll = () => {
         rafHandleRef.current = null;
       }
     };
-  }, []);
+  });
 
   // Ensure the component returns something
   return null; // or replace null with JSX if you want to render something
