@@ -52,7 +52,12 @@ export default function Navbar({ activeSection, setActiveSection }) {
                 >
                     Skills
                 </button>
-                <a className='text-text-tertiary hover:text-text-secondary transition-colors' href='#contact-me'>Contact Me</a>
+                <button
+                    className={`hover:text-text-secondary transition-colors ${activeSection === 'contact-me' ? 'text-text-secondary' : ''}`}
+                    onClick={() => handleNavClick('contact-me')}
+                >
+                    Contact Me
+                </button>
             </div>
         </div>
     );

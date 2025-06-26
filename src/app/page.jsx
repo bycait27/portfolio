@@ -6,6 +6,7 @@ import Home from '../components/sections/Home';
 import About from '../components/sections/About';
 import Projects from '../components/sections/Projects';
 import Skills from '../components/sections/Skills';
+import ContactMe from '../components/sections/ContactMe';
 import Footer from '../components/Footer';
 
 export default function Page() {
@@ -35,6 +36,12 @@ export default function Page() {
         return (
           <div className="animate-fadeIn">
             <Skills />;
+          </div>
+        );
+      case 'contact-me':
+        return (
+          <div className="animate-fadeIn">
+            <ContactMe />;
           </div>
         );
       default:
