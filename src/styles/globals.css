@@ -25,16 +25,8 @@
   body {
     background-color: var(--background-primary);
     color: var(--text-primary);
-    @apply flex flex-col box-border;
-    @apply m-8 px-24;
     @apply transition-colors duration-300;
-  }
-
-  /* mobile responsiveness */
-  @media (max-width: 430px) {
-    body {
-      @apply p-0 m-0;
-    }
+    /* Remove fixed margins/padding - let components handle their own spacing */
   }
 }
 
