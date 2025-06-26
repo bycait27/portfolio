@@ -1,3 +1,5 @@
+//  TODO: change skills section
+
 export default function Skills() {
     const technologies = [
         {
