@@ -44,25 +44,15 @@ export default function Skills() {
                 'vercel',
             ],
         },
-        // {
-        //     tech: [
-        //         'firebase'
-        //     ]
-        // }
     ]
 
     return (
         <div>
-            <div>
-                <h1>Skills</h1>
+            <div className="max-w-4xl mx-auto">
+                <h1 className="text-5xl font-bold text-center text-text-primary">
+                Skills
+                </h1>
             </div>
-            <div></div>
-                    <div>
-                        <div>
-                            <div>
-                            </div>
-                        </div>
-                    </div>
         </div>
     );
 };
