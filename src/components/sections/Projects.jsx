@@ -47,7 +47,7 @@ export default function Projects() {
                 {/* section header */}
                 <SectionHeader 
                     title="Projects"
-                    subtitle="subtitle"
+                    subtitle="Here are a few of my favorite projects!"
                     emoji="📓"
                 />
                 {/* projects grid */}

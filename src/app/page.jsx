@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
-import Home from '../components/Home';
+import Home from '../components/sections/Home';
 import About from '../components/sections/About';
 import Projects from '../components/sections/Projects';
 import Skills from '../components/sections/Skills';
@@ -26,9 +26,17 @@ export default function Page() {
           </div>
         );
       case 'projects':
-        return <Projects />;
+        return (
+          <div className="animate-fadeIn">
+            <Projects />;
+          </div>
+        );
       case 'skills':
-        return <Skills />;
+        return (
+          <div className="animate-fadeIn">
+            <Skills />;
+          </div>
+        );
       default:
         return <Home />;
     }
