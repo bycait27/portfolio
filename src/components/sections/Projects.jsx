@@ -1,7 +1,6 @@
 import Project from '../Project'
 import SectionHeader from '../ui/SectionHeader';
 
-// TODO: fix any broken links
 const projectData = [
     {
         projectTitle: 'The Tech Blog',
