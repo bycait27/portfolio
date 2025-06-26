@@ -17,7 +17,7 @@ export default function ContactMe() {
                     <div className="bg-background-secondary rounded-lg p-8 shadow-lg max-w-md w-full">
                         {/* info header */}
                         <p className="text-xl text-text-primary mb-6 text-center">
-                            Let's connect!
+                            Let&apos;s connect!
                         </p>
                         
                         <div className="space-y-6">
