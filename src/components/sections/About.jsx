@@ -13,7 +13,7 @@ export default function About() {
         <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed mb-8 text-text-primary">
             Hello, I&apos;m <span className="font-semibold text-text-secondary">Caitlin Ash</span> – 
-            a software engineer and Master&apos;s student in Computer Science with a passion 
+            a full-stack developer and Master&apos;s student in Computer Science with a passion 
             for creating meaningful digital experiences.
           </p>
           
