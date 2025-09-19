@@ -31,6 +31,7 @@ export default function Skills() {
               <span>
                   Coming soon...stay tuned!
               </span>
+              {/*
               {/* <span className="text-purple-400">const</span> <span className="text-blue-300">skills</span> <span className="text-white">=</span> <span className="text-gray-300">{"{"}</span>{"\n"}
               <span className="text-gray-300">  </span><span className="text-red-300">languages</span><span className="text-white">:</span> <span className="text-gray-300">[</span><span className="text-green-300">{'JavaScript'}</span><span className="text-gray-300">,</span> <span className="text-green-300">{'Java'}</span><span className="text-gray-300">,</span> <span className="text-green-300">{'Python'}</span><span className="text-gray-300">],</span>{"\n"}
               <span className="text-gray-300">  </span><span className="text-red-300">frontend</span><span className="text-white">:</span> <span className="text-gray-300">[</span><span className="text-green-300">{'React.js'}</span><span className="text-gray-300">,</span> <span className="text-green-300">{'Next.js'}</span><span className="text-gray-300">,</span> <span className="text-green-300">{'HTML5'}</span><span className="text-gray-300">,</span> <span className="text-green-300">{'CSS3'}</span><span className="text-gray-300">,</span> <span className="text-green-300">{'TailwindCSS'}</span><span className="text-gray-300">],</span>{"\n"}
