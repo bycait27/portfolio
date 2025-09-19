@@ -49,15 +49,19 @@ export default function Projects() {
                     subtitle="Here are a few of my favorite projects!"
                     emoji="📓"
                 />
+
+                <div className='text-center font-bold pt-20'>
+                    Coming soon...stay tuned!
+                </div>
                 {/* projects grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                     {projectData.map((project, index) => (
                         <Project 
                             key={index} 
                             {...project} 
                         />
                     ))}
-                </div>
+                </div> */}
             </div>
         </div>
     );

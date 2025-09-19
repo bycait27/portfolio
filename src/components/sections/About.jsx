@@ -9,19 +9,23 @@ export default function About() {
           subtitle="A little bit about me and my tech journey."
           emoji="👩🏻‍💻" 
         />
+
+        <div className='text-center font-bold pt-20'>
+            Coming soon...stay tuned!
+        </div>
         {/* TODO: maybe mention journey into tech */}
-        <div className="prose prose-lg max-w-none">
+        {/* <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed mb-8 text-text-primary">
             Hello, I&apos;m <span className="font-semibold text-text-secondary">Caitlin Ash</span> – 
-            a full-stack developer and Master&apos;s student in Computer Science with a passion 
-            for creating meaningful digital experiences.
+            a DevOps Engineer and Master&apos;s student in Computer Science with a passion 
+            for building reliable, scalable infrastructure and automation systems.
           </p>
           
           <p className="text-lg leading-relaxed mb-8 text-text-primary">
-            I believe great software comes from combining technical excellence with deep 
-            understanding of user needs. Whether building a responsive web application or 
-            architecting a complex backend system, I focus on writing clean, maintainable 
-            code that solves real problems.
+            I believe great software delivery comes from combining robust infrastructure with 
+            seamless deployment processes. Whether containerizing applications, designing CI/CD pipelines,
+            or architecting cloud infrastructure, I focus on creating automated, maintainable systems that 
+            enable teams to deploy confidently and frequently. 
           </p>
           
           <div className="mb-8">
@@ -32,31 +36,37 @@ export default function About() {
               <li className="flex items-start">
                 <span className="text-text-secondary mr-3 mt-1">•</span>
                 <span className="text-text-primary">
-                  Full-stack applications with automated deployment pipelines
+                  Infrastructure as Code and automated deployment pipelines with Docker and cloud platforms
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-text-secondary mr-3 mt-1">•</span>
                 <span className="text-text-primary">
-                  Enterprise development with Java, Spring Boot, and modern architectural patterns
+                  Distributed systems expertise from both academic coursework and hands-on implementation
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-text-secondary mr-3 mt-1">•</span>
                 <span className="text-text-primary">
-                  Strong foundation in computer science fundamentals and algorithmic thinking
+                  Programming in Go for infrastructure tools and automation scripts
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-text-secondary mr-3 mt-1">•</span>
                 <span className="text-text-primary">
-                  Experience with the complete software development lifecycle
+                  Strong foundation in Linux systems administration and networking concepts
                 </span>
               </li>
               <li className="flex items-start">
                 <span className="text-text-secondary mr-3 mt-1">•</span>
                 <span className="text-text-primary">
-                  Proven ability to learn new technologies quickly and apply them effectively
+                  Experience with monitoring, logging, and incident response methodologies
+                </span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-text-secondary mr-3 mt-1">•</span>
+                <span className="text-text-primary">
+                  Self-driven learner who builds production-ready projects to master new technologies
                 </span>
               </li>
             </ul>
@@ -64,12 +74,12 @@ export default function About() {
           
           <div className="bg-background-secondary rounded-lg p-6 border-l-4 border-text-highlight">
             <p className="text-lg text-text-primary mb-0">
-              I&apos;m actively seeking opportunities to contribute to innovative engineering 
-              teams where I can continue learning, building impactful software, and growing 
-              as a developer.
+              I&apos;m actively seeking opportunities to contribute to engineering teams focused on 
+              DevOps, Site Reliability, or Platform Engineering where I can help build the infrastructure 
+              that powers reliable software delivery. 
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
