@@ -13,13 +13,13 @@ export default function About() {
         <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed mb-8 text-text-primary">
             Hello, I&apos;m <span className="font-semibold text-text-secondary">Caitlin Ash</span> – 
-            a graduate Computer Science student specializing in backend systems and infrastructure. I'm currently 
+            a graduate Computer Science student specializing in backend systems and infrastructure. I&apos;m currently 
             building a distributed system in <strong>Java</strong> with layered, client-server architecture, and 
             developing DevOps automation tools and backend services in <strong>Go</strong>.
           </p>
 
           <p className="text-lg leading-relaxed mb-8 text-text-primary">
-            When I'm not coding, I am most likely getting lost in a book, playing video games, or hanging out with
+            When I&apos;m not coding, I am most likely getting lost in a book, playing video games, or hanging out with
             my dog.
           </p>
 
