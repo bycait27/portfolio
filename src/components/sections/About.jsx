@@ -31,7 +31,7 @@ export default function About() {
           </div>
 
           <div className="flex text-text-primary font-bold justify-center items-center w-full px-4 py-4 mt-4">
-            <a className="text-text-secondary rounded-md border border-text-secondary px-3 py-1 hover:bg-text-secondary hover:text-background-primary transition-colors flex items-center gap-2" href="/files/resume.pdf" target="_blank">
+            <a className="text-text-secondary rounded-md border border-text-secondary px-3 py-1 hover:bg-text-secondary hover:text-background-primary transition-colors flex items-center gap-2" href="/files/resume-updated.pdf" target="_blank">
                 <span>View Resume</span>
             </a>
           </div>

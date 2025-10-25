@@ -26,7 +26,7 @@ export default function Navbar({ activeSection, setActiveSection }) {
                     <a className='hover:text-text-secondary transition-colors' href='https://linkedin.com/in/caitlin-ash' target='_blank' rel='noopener noreferrer'>
                         <FaLinkedin size={20} />
                     </a>
-                    <a className='text-text-secondary rounded-md border border-text-secondary px-3 py-1 hover:bg-text-secondary hover:text-background-primary transition-colors flex items-center gap-2' href='/files/resume.pdf' download>
+                    <a className='text-text-secondary rounded-md border border-text-secondary px-3 py-1 hover:bg-text-secondary hover:text-background-primary transition-colors flex items-center gap-2' href='/files/resume-updated.pdf' download>
                         <FaDownload size={14} />
                         <span className="hidden sm:inline">Resume</span>
                     </a>
