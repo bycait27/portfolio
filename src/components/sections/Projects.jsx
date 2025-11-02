@@ -3,19 +3,19 @@ import SectionHeader from '../ui/SectionHeader';
 
 const projectData = [
     {
+        projectTitle: 'Distributed File Retrieval Engine',
+        projectDescription: 'Multi-threaded distributed system for concurrent document indexing. Processes 2.25 GB at 22.45 MB/s using Java socket programming and thread-safe data structures.',
+        viewCode: 'https://github.com/bycait27/dist-file-retrieval-engine',
+        viewApp: '',
+        tech: ['Java', 'Multi-threading', 'Socket Programming', 'Concurrency', 'Client-Server Architecture']
+    },
+    {
         projectTitle: 'The Tech Blog',
-        projectDescription: 'A CMS-style blog site with CI/CD pipeline and Docker containerization.',
+        projectDescription: 'Full-stack blogging platform with automated CI/CD pipeline and Docker containerization. Features authentication, post management, and real-time commenting.',
         viewCode: 'https://github.com/bycait27/tech-blog',
         viewApp: 'https://the-tech-blog7-f8ee982770ad.herokuapp.com/',
-        tech: ['JavaScript', 'Node.js', 'Express', 'MySQL', 'Docker', 'GitHub Actions']
+        tech: ['JavaScript', 'Node.js', 'Express', 'MySQL', 'Docker', 'GitHub Actions (CI/CD)']
     },
-    // {
-    //     projectTitle: 'Book Search Engine',
-    //     projectDescription: 'A Google Books GraphQL API built using the MERN stack.',
-    //     viewCode: 'https://github.com/bycait27/book-search-engine',
-    //     viewApp: 'https://book-search-engine-caitlins-projects-dc84348c.vercel.app/',
-    //     tech: ['JavaScript', 'React', 'MongoDB', 'GraphQL', 'Apollo', 'Express']
-    // },
     // {
     //     projectTitle: 'Text Editor',
     //     projectDescription: 'A simple text editor that meets the PWA criteria.',
