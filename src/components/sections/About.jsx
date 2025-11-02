@@ -25,13 +25,13 @@ export default function About() {
 
           <div className="bg-background-secondary rounded-lg p-6 border-l-4 border-text-highlight">
             <p className="text-lg text-text-primary mb-0"> 
-              Currently seeking Summer 2026 internships in backend engineering, DevOps, or SRE roles.
+              Currently seeking Summer 2026 internships in SWE, Backend Engineering, DevOps, or SRE roles.
               Based in Chicago, open to remote opportunities.
             </p>
           </div>
 
           <div className="flex text-text-primary font-bold justify-center items-center w-full px-4 py-4 mt-4">
-            <a className="text-text-secondary rounded-md border border-text-secondary px-3 py-1 hover:bg-text-secondary hover:text-background-primary transition-colors flex items-center gap-2" href="/files/resume-updated.pdf" target="_blank">
+            <a className="text-text-secondary rounded-md border border-text-secondary px-3 py-1 hover:bg-text-secondary hover:text-background-primary transition-colors flex items-center gap-2" href="/files/resume-2025.pdf" target="_blank">
                 <span>View Resume</span>
             </a>
           </div>
