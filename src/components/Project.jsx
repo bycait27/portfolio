@@ -38,15 +38,17 @@ export default function Project({ projectTitle, projectDescription, viewCode, vi
                     <FaGithub size={16} />
                     View Code
                 </a>
-                <a
-                    href={viewApp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 border border-text-secondary text-text-secondary px-4 py-2 rounded-md hover:bg-text-secondary hover:text-white transition-colors duration-200 font-medium"
-                >
-                    <FaExternalLinkAlt size={14} />
-                    Live Demo
-                </a>
+                {viewApp && (
+                    <a
+                        href={viewApp}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 border border-text-secondary text-text-secondary px-4 py-2 rounded-md hover:bg-text-secondary hover:text-white transition-colors duration-200 font-medium"
+                    >
+                        <FaExternalLinkAlt size={14} />
+                        Live Demo
+                    </a>
+                )}
             </div>
         </div>
     );
