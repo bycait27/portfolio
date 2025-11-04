@@ -4,7 +4,7 @@ import SectionHeader from '../ui/SectionHeader';
 const projectData = [
     {
         projectTitle: 'Distributed File Retrieval Engine',
-        projectDescription: 'Multi-threaded distributed system for concurrent document indexing. Processes 2.25 GB at 22.45 MB/s using Java socket programming and thread-safe data structures.',
+        projectDescription: 'Multi-threaded distributed system for concurrent document indexing. Processes 2.15 GB at 54 MB/s using Java socket programming and thread-safe data structures.',
         viewCode: 'https://github.com/bycait27/dist-file-retrieval-engine',
         viewApp: '',
         tech: ['Java', 'Multi-threading', 'Socket Programming', 'Concurrency', 'Client-Server Architecture']
