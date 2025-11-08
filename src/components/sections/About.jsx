@@ -12,7 +12,7 @@ export default function About() {
 
         <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed mb-8 text-text-primary">
-            Hello, I&apos;m <span className="font-semibold text-text-secondary">Caitlin</span> – a Computer Science master's
+            Hello, I&apos;m <span className="font-semibold text-text-secondary">Caitlin</span> – a Computer Science master&apos;s
             student at DePaul University specializing in DevOps Engineering and Site Reliability Engineering. I build reliable, 
             automated systems through CI/CD pipelines, containerization, and performance optimization.
           </p>
