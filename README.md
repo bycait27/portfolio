@@ -1,54 +1,31 @@
 # Caitlin Ash | Portfolio
 
 ## Overview
-A modern, responsive portfolio website showcasing my journey as a software engineer and Computer Science graduate student. Built with Next.js and TailwindCSS, featuring a terminal-style skills section and clean, professional design.
+A modern, responsive portfolio website showcasing my journey as a DevOps and SRE Engineer and Computer Science master's student. Built with Next.js and TailwindCSS, featuring a terminal-style skills section and clean, professional design.
 
 ## Table of Contents
-
-- [Overview](#overview)
-- [Live Demo](#live-demo)
-- [Screenshots](#screenshots)
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Sections](#sections)
-- [Quick Start](#quick-start)
-- [Design System](#design-system)
-- [Key Features Explained](#key-features-explained)
-- [Performance Metrics](#performance-metrics)
-- [Deployment](#deployment)
-- [Future Enhancements](#future-enhancements)
-- [Connect With Me](#connect-with-me)
+  - [Overview](#overview)
+  - [Table of Contents](#table-of-contents)
+  - [Live Demo](#live-demo)
+  - [Features](#features)
+  - [Technology Stack](#technology-stack)
+  - [Sections](#sections)
+  - [Quick Start](#quick-start)
+  - [Design System](#design-system)
+  - [Key Features Explained](#key-features-explained)
+    - [Terminal Skills Section](#terminal-skills-section)
+    - [Component Architecture](#component-architecture)
+    - [Performance Optimizations](#performance-optimizations)
+  - [Performance Metrics](#performance-metrics)
+  - [Deployment](#deployment)
+  - [Future Enhancements](#future-enhancements)
+  - [Connect With Me](#connect-with-me)
 
 ## Live Demo
 
 🌐 **[View Live Website](https://caitlinash.io/)**
 
-## Screenshots
-
-<table align="center">
-  <tr>
-    <td colspan="2" align="center">
-      <h3>🖥️ Desktop Experience</h3>
-      <img src="./public/images/desktop.png" alt="Desktop Portfolio View" width="800" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" style="padding: 20px 0;">
-      <h3>💻 Terminal Skills Section</h3>
-      <img src="./public/images/skills.png" alt="Terminal Skills Display" width="700" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
-    </td>
-  </tr>
-  <tr>
-    <td align="center" style="padding: 10px;">
-      <h4>📱 Mobile Home</h4>
-      <img src="./public/images/mobile1.png" alt="Mobile Home View" width="250" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
-    </td>
-    <td align="center" style="padding: 10px;">
-      <h4>🍔 Mobile Menu</h4>
-      <img src="./public/images/mobile2.png" alt="Mobile Navigation Menu" width="250" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);">
-    </td>
-  </tr>
-</table>
+![](./public/images/readme.png)
 
 ---
 
@@ -151,7 +128,6 @@ npm start
 Custom-built terminal interface that displays skills as a JavaScript object with:
 - Syntax highlighting for better readability
 - Terminal window styling with close/minimize buttons
-- `getCurrentlyLearning()` function showing continuous growth
 - Authentic terminal appearance with proper color coding
 - Animated cursor for realistic terminal feel
 
@@ -218,9 +194,9 @@ npm run build
 - **LinkedIn**: [Caitlin Ash](https://linkedin.com/in/caitlin-ash)
 - **Email**: [caitlinba27@gmail.com](mailto:caitlinba27@gmail.com)
 
-📄 **Resume**: [Download PDF](./public/files/resume.pdf)
+📄 **Resume**: [Download PDF](./public/files/resume-2025.pdf)
 
-🎯 **Currently seeking internship opportunities in software engineering!**
+🎯 **Currently seeking internship opportunities for Summer 2026 in DevOps and Site Reliability Engineering!**
 
 ---
 
