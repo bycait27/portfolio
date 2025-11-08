@@ -12,7 +12,7 @@ export default function About() {
 
         <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed mb-8 text-text-primary">
-            Hello, I&apos;m <span className="font-semibold text-text-secondary">Caitlin</span> – a graduate Computer Science 
+            Hello, I&apos;m <span className="font-semibold text-text-secondary">Caitlin</span> – a Computer Science master's
             student at DePaul University specializing in DevOps Engineering and Site Reliability Engineering. I build reliable, 
             automated systems through CI/CD pipelines, containerization, and performance optimization.
           </p>
@@ -24,7 +24,10 @@ export default function About() {
 
           <div className="bg-background-secondary rounded-lg p-6 border-l-4 border-text-highlight">
             <p className="text-lg text-text-primary mb-0"> 
-              Currently seeking Summer 2026 internships in <strong>DevOps Engineering, SRE, or Infrastructure roles</strong>. <br></br><br></br>
+              Currently seeking Summer 2026 internships in <strong>DevOps Engineering, Site Reliability Engineering (SRE), or Platform Engineering</strong>. <br></br><br></br>
+
+              <strong>Focus areas:</strong> CI/CD automation, containerization, system reliability, and performance optimization. <br></br><br></br>
+
               📍 Based in Chicago | Open to remote opportunities.
             </p>
           </div>

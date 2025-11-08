@@ -29,15 +29,17 @@ export default function Project({ projectTitle, projectDescription, viewCode, vi
 
             {/* card actions */}
             <div className="flex gap-4">
-                <a
-                    href={viewCode}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-text-secondary text-white px-4 py-2 rounded-md hover:bg-text-highlight transition-colors duration-200 font-medium"
-                >
+                {viewCode && (
+                    <a
+                        href={viewCode}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 bg-text-secondary text-white px-4 py-2 rounded-md hover:bg-text-highlight transition-colors duration-200 font-medium"
+                    >
                     <FaGithub size={16} />
-                    View Code
-                </a>
+                        View Code
+                    </a>
+                )}
                 {viewApp && (
                     <a
                         href={viewApp}
