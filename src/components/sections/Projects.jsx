@@ -3,18 +3,18 @@ import SectionHeader from '../ui/SectionHeader';
 
 const projectData = [
     {
-        projectTitle: 'Distributed File Retrieval Engine',
-        projectDescription: 'Multi-threaded distributed system for concurrent document indexing. Processes 2.0 GB at ~54 MB/s using Java socket programming and thread-safe data structures.',
+        projectTitle: 'Distributed File Retrieval System',
+        projectDescription: 'High-performance distributed system achieving ~54 MB/s throughput with concurrent architecture and performance optimization',
         viewCode: 'https://github.com/bycait27/dist-file-retrieval-engine',
         viewApp: '',
-        tech: ['Java', 'Multi-threading', 'Socket Programming', 'Concurrency', 'Client-Server Architecture']
+        tech: ['Java', 'Distributed Systems', 'Performance Optimization', 'System Administration', 'Networking']
     },
     {
         projectTitle: 'The Tech Blog',
-        projectDescription: 'Full-stack blogging platform with automated CI/CD pipeline and Docker containerization. Features authentication, post management, and real-time commenting.',
+        projectDescription: 'Automated CI/CD pipeline with GitHub Actions, Docker containerization, multi-container orchestration, and 86% test coverage',
         viewCode: 'https://github.com/bycait27/tech-blog',
         viewApp: 'https://the-tech-blog7-f8ee982770ad.herokuapp.com/',
-        tech: ['JavaScript', 'Node.js', 'Express', 'MySQL', 'Docker', 'GitHub Actions (CI/CD)']
+        tech: ['JavaScript', 'Docker', 'GitHub Actions (CI/CD)', 'Automation', 'DevOps', 'Continuous Deployment']
     },
     // {
     //     projectTitle: 'Text Editor',
