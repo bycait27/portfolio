@@ -19,7 +19,7 @@ export default function About() {
 
           <p className="text-xl leading-relaxed mb-8 text-text-primary">
             When I&apos;m not coding, I am most likely getting lost in a book, playing video games, or hanging out with
-            my dog.
+            my dog!
           </p>
 
           <div className="bg-background-secondary rounded-lg p-6 border-l-4 border-text-highlight">
