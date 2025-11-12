@@ -16,13 +16,13 @@ const projectData = [
         viewApp: 'https://the-tech-blog7-f8ee982770ad.herokuapp.com/',
         tech: ['JavaScript', 'Docker', 'GitHub Actions (CI/CD)', 'Automation', 'DevOps', 'Continuous Deployment']
     },
-    {
-        projectTitle: 'System Monitoring & Observability CLI (In Progress)',
-        projectDescription: 'Infrastructure monitoring tool built in Go, integrating with Docker Engine API for real-time container and system metrics collection',
-        viewCode: '', // empty for now
-        viewApp: '',
-        tech: ['Go', 'Docker API', 'System Monitoring', 'Observability', 'CLI Development']
-    },
+    // {
+    //     projectTitle: 'System Monitoring & Observability CLI (In Progress)',
+    //     projectDescription: 'Infrastructure monitoring tool built in Go, integrating with Docker Engine API for real-time container and system metrics collection',
+    //     viewCode: '', // empty for now
+    //     viewApp: '',
+    //     tech: ['Go', 'Docker API', 'System Monitoring', 'Observability', 'CLI Development']
+    // },
 ];
 
 export default function Projects() {
