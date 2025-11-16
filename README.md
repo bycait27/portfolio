@@ -194,9 +194,7 @@ npm run build
 - **LinkedIn**: [Caitlin Ash](https://linkedin.com/in/caitlin-ash)
 - **Email**: [caitlinba27@gmail.com](mailto:caitlinba27@gmail.com)
 
-📄 **Resume**: [Download PDF](./public/files/resume-2025.pdf)
-
-🎯 **Currently seeking internship opportunities for Summer 2026 in DevOps and Site Reliability Engineering!**
+🎯 **Currently seeking internship opportunities for Summer 2026 in Backend and Full-Stack Engineering!**
 
 ---
 
