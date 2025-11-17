@@ -1,7 +1,7 @@
 # Caitlin Ash | Portfolio
 
 ## Overview
-A modern, responsive portfolio website showcasing my journey as a DevOps and SRE Engineer and Computer Science master's student. Built with Next.js and TailwindCSS, featuring a terminal-style skills section and clean, professional design.
+A modern, responsive portfolio website showcasing my journey as a Software Engineer and Computer Science master's student. Built with Next.js and TailwindCSS, featuring a terminal-style skills section and clean, professional design.
 
 ## Table of Contents
   - [Overview](#overview)
