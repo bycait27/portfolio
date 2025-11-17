@@ -10,11 +10,18 @@ export default function About() {
           emoji="👩🏻‍💻" 
         />
 
-        <div className="prose prose-lg max-w-none">
+                <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed mb-8 text-text-primary">
             Hello, I&apos;m <span className="font-semibold text-text-secondary">Caitlin</span> – a Computer Science master&apos;s
-            student at DePaul University specializing in DevOps Engineering and Site Reliability Engineering. I build reliable, 
-            automated systems through CI/CD pipelines, containerization, and performance optimization.
+            student at DePaul University focused on backend and full-stack software development. I write code for 
+            applications in Java and JavaScript, with a focus on building robust backend systems and REST APIs.
+          </p>
+
+          <p className="text-xl leading-relaxed mb-8 text-text-primary">
+            I started with full-stack web development through a bootcamp, then pursued my master&apos;s to deepen 
+            my programming fundamentals. I discovered my passion for Java and backend engineering through coursework 
+            in distributed systems and algorithms. Now I&apos;m building Spring Boot applications and focusing on 
+            enterprise Java development.
           </p>
 
           <p className="text-xl leading-relaxed mb-8 text-text-primary">
@@ -24,11 +31,11 @@ export default function About() {
 
           <div className="bg-background-secondary rounded-lg p-6 border-l-4 border-text-highlight">
             <p className="text-lg text-text-primary mb-0"> 
-              Currently seeking Summer 2026 internships in <strong>DevOps Engineering, Site Reliability Engineering (SRE), or Platform Engineering</strong>. <br></br><br></br>
+              Currently seeking Summer 2026 internships in <strong>Backend Software Engineering or Full-Stack Development</strong>. <br></br><br></br>
 
-              <strong>Focus areas:</strong> CI/CD automation, containerization, system reliability, and performance optimization. <br></br><br></br>
+              <strong>Focus areas:</strong> Java/Spring Boot, REST APIs, backend systems, and full-stack applications. <br></br><br></br>
 
-              📍 Based in Chicago | Open to remote opportunities.
+              📍 Based in Chicago
             </p>
           </div>
 

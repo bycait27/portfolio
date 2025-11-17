@@ -4,25 +4,18 @@ import SectionHeader from '../ui/SectionHeader';
 const projectData = [
     {
         projectTitle: 'Distributed File Retrieval System',
-        projectDescription: 'High-performance distributed system achieving ~54 MB/s throughput with concurrent architecture and performance optimization',
+        projectDescription: 'Multi-threaded client-server system for concurrent document indexing and search. Achieved ~54 MB/s throughput through systematic optimization.',
         viewCode: 'https://github.com/bycait27/dist-file-retrieval-engine',
         viewApp: '',
-        tech: ['Java', 'Distributed Systems', 'Performance Optimization', 'System Administration', 'Networking']
+        tech: ['Java', 'Multi-threading', 'Socket Programming', 'Distributed Systems', 'Concurrent Programming']
     },
     {
-        projectTitle: 'The Tech Blog',
-        projectDescription: 'Automated CI/CD pipeline with GitHub Actions, Docker containerization, multi-container orchestration, and 86% test coverage',
+        projectTitle: 'The Tech Blog - Full-Stack Application',
+        projectDescription: 'Full-stack blogging platform with user authentication, post creation, and commenting. Deployed with Docker and automated CI/CD pipeline.',
         viewCode: 'https://github.com/bycait27/tech-blog',
         viewApp: 'https://the-tech-blog7-f8ee982770ad.herokuapp.com/',
-        tech: ['JavaScript', 'Docker', 'GitHub Actions (CI/CD)', 'Automation', 'DevOps', 'Continuous Deployment']
+        tech: ['JavaScript', 'Node.js', 'Express.js', 'MySQL', 'Docker', 'GitHub Actions']
     },
-    // {
-    //     projectTitle: 'System Monitoring & Observability CLI (In Progress)',
-    //     projectDescription: 'Infrastructure monitoring tool built in Go, integrating with Docker Engine API for real-time container and system metrics collection',
-    //     viewCode: '', // empty for now
-    //     viewApp: '',
-    //     tech: ['Go', 'Docker API', 'System Monitoring', 'Observability', 'CLI Development']
-    // },
 ];
 
 export default function Projects() {
