@@ -13,7 +13,7 @@ export default function About() {
                 <div className="prose prose-lg max-w-none">
           <p className="text-xl leading-relaxed mb-8 text-text-primary">
             Hello, I&apos;m <span className="font-semibold text-text-secondary">Caitlin</span> – a Computer Science master&apos;s
-            student at DePaul University focused on backend and full-stack software development. I write code for 
+            student at DePaul University focused on backend software development with full-stack capabilities. I write code for 
             applications in Java and JavaScript, with a focus on building robust backend systems and REST APIs.
           </p>
 
