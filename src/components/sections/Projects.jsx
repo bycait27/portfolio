@@ -3,11 +3,11 @@ import SectionHeader from '../ui/SectionHeader';
 
 const projectData = [
     {
-        projectTitle: 'Distributed File Retrieval System',
+        projectTitle: 'Concurrent File Retrieval System',
         projectDescription: 'Multi-threaded client-server system for concurrent document indexing and search. Achieved ~54 MB/s throughput through systematic optimization.',
-        viewCode: 'https://github.com/bycait27/dist-file-retrieval-engine',
+        viewCode: 'https://github.com/bycait27/file-retrieval-engine',
         viewApp: '',
-        tech: ['Java', 'Multi-threading', 'Socket Programming', 'Distributed Systems', 'Concurrent Programming']
+        tech: ['Java', 'Multi-threading', 'Socket Programming', 'Concurrent Programming', 'Client-Server Model']
     },
     {
         projectTitle: 'The Tech Blog - Full-Stack Application',
